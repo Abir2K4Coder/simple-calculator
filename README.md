@@ -4,7 +4,7 @@ A modern, responsive web calculator built with HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-[View on GitHub Pages](https://your-username.github.io/your-repo-name/)
+https://abir2k4coder.github.io/simple-calculator/
 
 ## ✨ Features
 
