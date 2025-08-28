@@ -1,9 +1,10 @@
 const buttonsE1 = document.querySelectorAll('button');
 const inputFieldE1 = document.getElementById('result');
 
+
 inputFieldE1.addEventListener('keydown', function(e) {
     const allowedKeys = [
-        '0','1','2','3','4','5','6','7','8','9','⌫',
+        '0','1','2','3','4','5','6','7','8','9',
         '+','-','*','/','.','Backspace','Delete','Enter','=','ArrowLeft','ArrowRight'
     ];
     if (
@@ -57,4 +58,3 @@ function calculateResult() {
 function appendValue(buttonValue) {
     inputFieldE1.value += buttonValue;
 }
-
