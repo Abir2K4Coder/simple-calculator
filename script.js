@@ -1,24 +1,23 @@
 const buttonsE1 = document.querySelectorAll('button');
 const inputFieldE1 = document.getElementById('result');
 
-// Allow only valid calculator keys from keyboard
 inputFieldE1.addEventListener('keydown', function(e) {
     const allowedKeys = [
-        '0','1','2','3','4','5','6','7','8','9',
+        '0','1','2','3','4','5','6','7','8','9','⌫',
         '+','-','*','/','.','Backspace','Delete','Enter','=','ArrowLeft','ArrowRight'
     ];
     if (
         allowedKeys.includes(e.key)
     ) {
-        // Enter or = triggers calculation
+        
         if (e.key === 'Enter' || e.key === '=') {
             calculateResult();
             e.preventDefault();
         }
-        // Backspace and Delete are allowed by default
+        
         return;
     } else {
-        // Block any other key (including alphabets)
+        
         e.preventDefault();
     }
 });
@@ -58,3 +57,4 @@ function calculateResult() {
 function appendValue(buttonValue) {
     inputFieldE1.value += buttonValue;
 }
+
